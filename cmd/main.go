@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"sudoku/pkg/utils"
+)
 
 func main() {
 	m := [9][9]int{
@@ -14,5 +17,9 @@ func main() {
 		{5, 0, 6, 0, 0, 7, 4, 9, 8},
 		{7, 0, 8, 0, 0, 4, 5, 1, 0},
 	}
+
+	utils.PrintPolish()
 	fmt.Println(m)
+	utils.PrintPolish()
+
 }
