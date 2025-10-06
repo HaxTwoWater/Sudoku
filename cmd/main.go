@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	m := [9][9]int{
 		{1, 0, 0, 4, 0, 0, 0, 0, 9},
@@ -12,4 +14,5 @@ func main() {
 		{5, 0, 6, 0, 0, 7, 4, 9, 8},
 		{7, 0, 8, 0, 0, 4, 5, 1, 0},
 	}
+	fmt.Println(m)
 }
