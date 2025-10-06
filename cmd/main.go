@@ -1,12 +1,11 @@
 package main
 
 import (
-	"fmt"
 	"sudoku/pkg/utils"
 )
 
 func main() {
-	m := [9][9]int{
+	m := [][]int{
 		{1, 0, 0, 4, 0, 0, 0, 0, 9},
 		{4, 0, 9, 1, 7, 8, 2, 3, 6},
 		{8, 0, 7, 2, 0, 3, 1, 0, 0},
@@ -19,7 +18,7 @@ func main() {
 	}
 
 	utils.PrintPolish()
-	fmt.Println(m)
+	utils.DisplayGrid(m)
 	utils.PrintPolish()
 
 }
